@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-color: #4caf50;
+    color: white;
+    padding: 50px 0;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    margin: 20px;
+}
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.features ul li {
+    margin: 10px 0;
+}
+
+.features-image {
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+/* Reviews Section */
+.reviews {
+    background-color: #f9f9f9;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.reviews blockquote {
+    font-style: italic;
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+/* Admin Dashboard Button */
+.admin-dashboard {
+    text-align: center;
+    margin: 20px;
+}
+
+.admin-button {
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-button:hover {
+    background-color: #45a049;
+}
+/* Orders Section */
+.orders {
+    margin: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+thead {
+    background-color: #4caf50;
+    color: white;
+}
+
+thead th {
+    padding: 10px;
+    text-align: center;
+}
+
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody td {
+    padding: 10px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}

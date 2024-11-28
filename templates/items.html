@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshPick Fruits & Vegetables</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-item input {
+    width: 60px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.product-item label {
+    font-size: 14px;
+    color: #333;
+}
+.cart {
+    text-align: center;
+    margin: 20px;
+}
+
+.cart-button {
+    background-color: #4caf50;
+    color: white;
+    margin-left: 500px;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>FreshPick Fruits & Vegetables</h1>
+        </header>
+
+        <!-- Product Grid -->
+        <section class="product-grid">
+            <div class="product-item">
+                <img src="/static/images/apples.jpg" alt="Apple" class="product-image">
+                <h3>Apple</h3>
+                <p>$1.20</p>
+                <label for="apple-qty">Quantity:</label>
+                <input type="number" id="apple-qty" value="1" min="1">
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <img src="/static/images/banana.jpg" alt="Banana" class="product-image">
+                <h3>Banana</h3>
+                <p>$1.10</p>
+                <label for="banana-qty">Quantity:</label>
+                <input type="number" id="banana-qty" value="1" min="1">
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <img src="/static/images/orange.jpg" alt="Orange" class="product-image">
+                <h3>Orange</h3>
+                <p>$1.50</p>
+                <label for="orange-qty">Quantity:</label>
+                <input type="number" id="orange-qty" value="1" min="1">
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- More Products (repeat the structure above for each item) -->
+            <!-- Example of another product -->
+            <div class="product-item">
+                <img src="/static/images/tomato.jpg" alt="Tomato" class="product-image">
+                <h3>Tomato</h3>
+                <p>$2.00</p>
+                <label for="tomato-qty">Quantity:</label>
+                <input type="number" id="tomato-qty" value="1" min="1">
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="/static/images/onion.jpg" alt="onion" class="product-image">
+                <h3>Onion</h3>
+                <p>$0.80</p>
+                <label for="onion-qty">Quantity:</label>
+                <input type="number" id="onion-qty" value="1" min="1">
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="/static/images/potato.jpg" alt="potato" class="product-image">
+                <h3>Potato</h3>
+                <p>$1.00</p>
+                <label for="potato-qty">Quantity:</label>
+                <input type="number" id="potato-qty" value="1" min="1">
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="/static/images/grapes.jpg" alt="grapes" class="product-image">
+                <h3>Grapes</h3>
+                <p>$3.00</p>
+                <label for="grapes-qty">Quantity:</label>
+                <input type="number" id="grapes-qty" value="1" min="1">
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="/static/images/cucumber.jpg" alt="cucumber" class="product-image">
+                <h3>Cucumber</h3>
+                <p>$1.00</p>
+                <label for="cucumber-qty">Quantity:</label>
+                <input type="number" id="cucumber-qty" value="1" min="1">
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+            <div class="cart">
+                <a href="{{ url_for('cart') }}" class="cart-button">checkout</a>
+            </div>
+        </section>
+    </div>
+</body>
+<script>
+    // Add to Cart using AJAX
+    document.addEventListener('DOMContentLoaded', () => {
+        const cartButtons = document.querySelectorAll('.add-to-cart');
+        cartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const parent = button.parentElement;
+                const name = parent.querySelector('h3').innerText;
+                const price = parseFloat(parent.querySelector('p').innerText.replace('$', ''));
+                const quantity = parseInt(parent.querySelector('input').value);
+
+                fetch('/add_to_cart', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ name, price, quantity }),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert(`${name} added to cart successfully!`);
+                    } else {
+                        alert('Failed to add item to cart.');
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+            });
+        });
+    });
+</script>
+
+</html>
